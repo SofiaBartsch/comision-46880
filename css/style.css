@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background-color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    letter-spacing: .0625rem;
+}
+
+header
+    {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    gap: 1.25rem;
+    position: sticky;
+    top: 0;
+    }
+    
+.index-img {
+    width: 28.125rem;
+    display: flex;
+    justify-content: center;
+}
+
+.body-boot {
+    background-color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    letter-spacing: .0625rem;
+}    
+
+.header-boot {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    gap: 1.25rem;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    list-style: none;
+    padding-left: 3.125rem;
+    width: 100%;
+}
+.navbar li a {
+    text-decoration: none; 
+    color: black;
+}
+
+.navbar li a:hover{
+    padding-left: 1.875rem;
+}
+.clase-dos a {
+    text-decoration: none;
+    color: black;
+    margin-left: 3.125rem;
+    margin-top: 3.125rem;
+}
+
+.clase-tres {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 12.5rem;
+}
+
+main {
+    margin-left: 6.25rem;
+    margin-right: 6.25rem
+}
+
+.galeria-proyectos img{
+    width: 28.125rem;
+    height: 28.125rem;
+    margin-right: 1.5625rem;
+    margin-left: 1.5625rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.5625rem;
+}
+
+.galeria-urbanismo img {
+    width: 59.375rem;
+    height: 28.125rem;
+    margin-bottom: 3.125rem;
+
+}
+
+
+.claseoficina-img {
+    width: 28.125rem;
+    height: 28.125rem;
+}
+
+
+
+.galeria-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-urbanismo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.grids {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2 (2,1fr);
+    grid-template-rows: 2 (2,1fr);
+    grid-template-areas: 
+    "section1 section3"
+    "section2 section3"
+    ;
+    justify-content: center;
+}
+
+.section1 {
+text-align: right;
+grid-area: section1;
+}
+
+.section2 {
+margin-left: 3.125rem;
+grid-area: section2;
+text-align: end;
+margin-bottom: 9.375rem;
+}
+
+.section3 {
+grid-area: section3;
+width: 28.125rem;
+margin-left: 3.125rem;
+}
+
+.grids2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2 (2, 1fr);
+    grid-template-rows: 1 (1, 1fr);
+    grid-template-areas: 
+    "section1-contacto section2-contacto";
+    justify-content: center;
+}
+
+.section1-contacto {
+    grid-area: section1-contacto;
+    margin-right: 9.375rem;
+}
+
+@media (max-width: 1024px){
+    header{
+        font-size: small;
+    }
+    body{
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        font-size: small;
+    }
+    body{
+        font-size: small;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        font-size: small;
+    }
+    body{
+        font-size: smaller;
+        justify-content: center;
+    }
+    .grids {
+        grid-template-columns: 1 (1,1fr);
+    grid-template-rows: 3 (3,1fr);
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3"
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        font-size: smaller;
+    }
+    body{
+        font-size: smaller;
+    }
+    .grids {
+        grid-template-columns: 1 (1,1fr);
+    grid-template-rows: 3 (3,1fr);
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3"
+}
+}
+
+@media (max-width: 320px) {
+    header{
+        font-size: smaller;
+    }
+    body{
+        font-size: smaller;
+    }
+    .grids {
+        width: 300px;
+        grid-template-columns: 1 (1,1fr);
+    grid-template-rows: 3 (3,1fr);
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3"
+    }
+}
